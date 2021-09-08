@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Image Processing Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+				
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Colorization of <br/> of Black and White images</h1>
+							<p class="major">A Project made for J component of Image Processing class by 
+								<ol>
+									<li>Devang Dayal - 19BCE1645</li>
+									<li>Neelesh Ranjan Jha - 19BCE1645</li>
+									<li>Rishi Saxena - 19BCE1659</li>
+									<li>Adhitya Parathasarthy - 19BCE1417</li>
+									<li>Rehan - 19BPS1033</li>
+									<li>Shashank Sridhar - 19BCE1429</li>
+									<li>M.S. Veer Shreyas - 19BCE1569</li>
+								</ol>
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/banner.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Abstract</h2>
+							<p>
+								Colorization of an Image is the process of assigning RGB pixel values to an image which varies along only
+								1 Dimension(luminance or intensity). Since different colors may have the same luminance value but vary in 
+								hue or saturation, mapping between intensity and color is not unique, and colorization is ambiguous in nature, 
+								requiring some amount of human interaction or external information.
+							</p>
+							<p>
+								The approach we will be taking for this project is going to be Convolutional neural network for colorizing
+								the images
+							</p>
+							<ul class="actions stacked">
+								<li><a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight02.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Introduction</h2>
+							<p>
+							   Colorization of an image is very important as it gives a natural feeling to the pixels on the screen
+							   Grey scale images have been in existence since 1826.
+							   Images are nothing but matrix and using the right tools and Machine Learning Models, greyscale images 
+							   can be easily colorized. 
+							</p>
+							<ul class="actions stacked">
+								<li><a href="https://hotpot.ai/colorize-picture" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight03.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Problem description</h2>
+							<p></p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight03.jpg" alt="" />
+						</div>
+					</section> -->
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Objective</h2>
+							<p>
+								Writing understandble and working code to convert Greyscale images
+								to Colorized version of them.
+								Creating an interface to easily upload and convert images from local
+								device.	
+							</p>
+							<p>
+								Additionaly, work towards colorization of greyscale videos.
+							</p>
+						</div>
+
+						<!-- Gallery -->
+							<!-- <div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/01.jpg" class="image">
+										<img src="images/gallery/thumbs/01.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/02.jpg" class="image">
+										<img src="images/gallery/thumbs/02.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Feugiat Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/03.jpg" class="image">
+										<img src="images/gallery/thumbs/03.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Amet</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/04.jpg" class="image">
+										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/05.jpg" class="image">
+										<img src="images/gallery/thumbs/05.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ultrices Magna</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/06.jpg" class="image">
+										<img src="images/gallery/thumbs/06.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/07.jpg" class="image">
+										<img src="images/gallery/thumbs/07.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/08.jpg" class="image">
+										<img src="images/gallery/thumbs/08.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Risus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/09.jpg" class="image">
+										<img src="images/gallery/thumbs/09.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Tempus Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/10.jpg" class="image">
+										<img src="images/gallery/thumbs/10.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Etiam</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/11.jpg" class="image">
+										<img src="images/gallery/thumbs/11.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/12.jpg" class="image">
+										<img src="images/gallery/thumbs/12.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+							</div> -->
+					</section>
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Roles</h2>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-chart-bar"></span>
+									<h3>Devang Dayal</h3>
+									<p>
+										ML Model creation and Finding data for training the model.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>Neelesh Ranjan Jha</h3>
+									<p>
+										Greyscale Image Colorization Scripting and creating interface for the user
+									</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Rishi Saxena</h3>
+									<p>
+										ML Model creation and Finding data for training the model.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-sync-alt"></span>
+									<h3>Adhitya Parathasarthy</h3>
+									<p>
+										Video Colorization Scripting.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-bolt"></span>
+									<h3>Rehan</h3>
+									<p>
+										
+									</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-sync-alt"></span>
+									<h3>Shashank Sridhar</h3>
+									<p>
+										Video Colorization Scripting.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>M.S. Veer Shreyas</h3>
+									<p>
+
+									</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+					<!-- Seven -->
+					<section class="wrapper style1">
+						<div class="inner content-align-left align-left">
+							<h2>References</h2>
+							<p>
+								<ol>
+									<li>
+										<a href="https://ieeexplore.ieee.org/abstract/document/5413392">
+											Colorization of grayscale images and videos using a semiautomatic approach
+										</a>
+									</li>
+									<li>
+										<a href="https://jespublication.com/upload/2020-110472.pdf">
+											Image Colorization with Deep Convolutional Open CV
+										</a>
+									</li>
+									<li>
+										<a href="https://www.pyimagesearch.com/2019/02/25/black-and-white-image-colorization-with-opencv-and-deep-learning/">
+											Black and white image colorization with OpenCV and Deep Learning
+										</a>
+									</li>
+								</ol>
+							</p>
+						</div>
+					</section>
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>Made by <a href="https://github.com/Neeleshrj">Neelesh Ranjan Jha</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
